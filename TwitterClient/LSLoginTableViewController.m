@@ -74,5 +74,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 @end
